@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Monky Jeans</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/page-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">MONKY</span>
+                <span class="logo-sub">JEANS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="catalog.html" class="nav-link">Catálogo</a></li>
+                <li><a href="about.html" class="nav-link">Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PRODUCTO DETALLADO -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-container">
+                <!-- GALERÍA DE IMÁGENES -->
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">👖</div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active" onclick="changeMainImage(this, '👖')">👖</div>
+                        <div class="thumbnail" onclick="changeMainImage(this, '👖')">👖</div>
+                        <div class="thumbnail" onclick="changeMainImage(this, '👖')">👖</div>
+                        <div class="thumbnail" onclick="changeMainImage(this, '👖')">👖</div>
+                    </div>
+                </div>
+
+                <!-- DETALLES DEL PRODUCTO -->
+                <div class="product-details">
+                    <h1 class="product-title" id="productTitle">Jeans Slim Fit Negro</h1>
+                    
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(142 reseñas)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span id="productPrice">$49.99</span>
+                    </div>
+
+                    <p class="product-description" id="productDescription">
+                        Estos jeans Slim Fit Negro ofrecen el ajuste perfecto para un look moderno y sofisticado. 
+                        Fabricados con denim de alta calidad, garantizan comodidad y durabilidad. 
+                        Perfectos para cualquier ocasión, desde casual hasta semi-formal.
+                    </p>
+
+                    <!-- ESPECIFICACIONES -->
+                    <div class="product-specs">
+                        <h3>Especificaciones</h3>
+                        <div class="spec-item">
+                            <span class="spec-label">Material:</span>
+                            <span class="spec-value">100% Algodón</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Origen:</span>
+                            <span class="spec-value">Manufacturado en México</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Estilo:</span>
+                            <span class="spec-value">Slim Fit</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Disponibilidad:</span>
+                            <span class="spec-value" id="availability">En Stock</span>
+                        </div>
+                    </div>
+
+                    <!-- SELECTOR DE TALLA -->
+                    <div class="size-selector">
+                        <h3>Selecciona tu Talla</h3>
+                        <div class="size-grid" id="sizeGrid">
+                            <button class="size-option" onclick="selectSize(this, '28')">28</button>
+                            <button class="size-option" onclick="selectSize(this, '30')">30</button>
+                            <button class="size-option" onclick="selectSize(this, '32')">32</button>
+                            <button class="size-option" onclick="selectSize(this, '34')">34</button>
+                            <button class="size-option" onclick="selectSize(this, '36')">36</button>
+                            <button class="size-option" onclick="selectSize(this, '38')">38</button>
+                        </div>
+                    </div>
+
+                    <!-- CANTIDAD -->
+                    <div class="quantity-selector">
+                        <label for="quantity">Cantidad:</label>
+                        <div class="quantity-input">
+                            <button onclick="decreaseQuantity()">−</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button onclick="increaseQuantity()">+</button>
+                        </div>
+                    </div>
+
+                    <!-- BOTONES DE COMPRA -->
+                    <div class="product-actions-large">
+                        <button class="btn-whatsapp-large" onclick="contactWhatsApp()">Contactar por WhatsApp</button>
+                    </div>
+
+                    <!-- INFORMACIÓN ADICIONAL -->
+                    <div style="margin-top: 2rem; padding: 1.5rem; background-color: var(--color-light-gray); border-radius: 8px;">
+                        <p style="font-size: 0.95rem; color: #666;">
+                            <strong>✓ Envío gratis</strong> en compras mayores a $500<br>
+                            <strong>✓ Devolución fácil</strong> dentro de 30 días<br>
+                            <strong>✓ Garantía de calidad</strong> en todas nuestras prendas
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN DE DETALLES DEL PRODUCTO -->
+            <div class="product-details-section">
+                <div class="details-tabs">
+                    <button class="tab-button active" onclick="openTab(event, 'description')">Descripción</button>
+                    <button class="tab-button" onclick="openTab(event, 'materials')">Materiales</button>
+                    <button class="tab-button" onclick="openTab(event, 'shipping')">Envío</button>
+                </div>
+
+                <div id="description" class="tab-content active">
+                    <h3>Descripción Detallada</h3>
+                    <p>Estos jeans Slim Fit Negro son la pieza esencial para tu guardarropa urbano. 
+                    Diseñados con atención al detalle, combinan estilo y confort. El corte Slim Fit se ajusta 
+                    perfectamente al cuerpo sin ser restrictivo, permitiendo libertad de movimiento. 
+                    Ideal para combinar con camisetas básicas, sudaderas o chamarras de mezclilla.</p>
+                </div>
+
+                <div id="materials" class="tab-content">
+                    <h3>Materiales y Cuidados</h3>
+                    <p><strong>Composición:</strong> 100% Algodón de alta calidad</p>
+                    <p><strong>Cuidados:</strong></p>
+                    <ul style="margin-left: 2rem; color: #666;">
+                        <li>Lavar en agua fría</li>
+                        <li>No usar lejía</li>
+                        <li>Secar al aire libre</li>
+                        <li>Planchar a temperatura media si es necesario</li>
+                    </ul>
+                </p>
+                </div>
+
+                <div id="shipping" class="tab-content">
+                    <h3>Información de Envío</h3>
+                    <p><strong>Tiempo de envío:</strong> 2-5 días hábiles</p>
+                    <p><strong>Costo de envío:</strong> Desde $50 (Gratis en compras mayores a $500)</p>
+                    <p><strong>Garantía:</strong> Devolución sin preguntas en 30 días</p>
+                    <p>Todos nuestros envíos incluyen rastreo en tiempo real y embalaje seguro.</p>
+                </div>
+            </div>
+
+            <!-- PRODUCTOS RELACIONADOS -->
+            <section style="margin-top: 4rem;">
+                <h2 style="font-family: var(--font-display); font-size: 2rem; text-transform: uppercase; margin-bottom: 2rem; text-align: center;">
+                    Productos Relacionados
+                </h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">👖</div>
+                            <span class="badge">Popular</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Jeans Oversize Azul</h3>
+                            <p class="description">Tendencia actual, comodidad máxima</p>
+                            <div class="price">$54.99</div>
+                            <div class="product-actions">
+                                <button class="btn btn-secondary" onclick="window.location.href='product.html?id=2'">Ver Detalles</button>
+                                <button class="btn btn-whatsapp" onclick="sendWhatsAppMessage('Jeans Oversize Azul', '$54.99', '2')">📱 WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">👔</div>
+                            <span class="badge discount">-20%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Chamarra Denim Premium</h3>
+                            <p class="description">Perfecta para cualquier ocasión</p>
+                            <div class="price"><span class="original">$79.99</span> $63.99</div>
+                            <div class="product-actions">
+                                <button class="btn btn-secondary" onclick="window.location.href='product.html?id=3'">Ver Detalles</button>
+                                <button class="btn btn-whatsapp" onclick="sendWhatsAppMessage('Chamarra Denim Premium', '$63.99', '3')">📱 WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">👕</div>
+                            <span class="badge new">Nuevo</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Playera Monky Logo</h3>
+                            <p class="description">Diseño exclusivo y cómodo</p>
+                            <div class="price">$29.99</div>
+                            <div class="product-actions">
+                                <button class="btn btn-secondary" onclick="window.location.href='product.html?id=4'">Ver Detalles</button>
+                                <button class="btn btn-whatsapp" onclick="sendWhatsAppMessage('Playera Monky Logo', '$29.99', '4')">📱 WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">👖</div>
+                            <span class="badge discount">-15%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Jeans Skinny Gris</h3>
+                            <p class="description">Ajuste perfecto y cómodo</p>
+                            <div class="price"><span class="original">$52.99</span> $44.99</div>
+                            <div class="product-actions">
+                                <button class="btn btn-secondary" onclick="window.location.href='product.html?id=5'">Ver Detalles</button>
+                                <button class="btn btn-whatsapp" onclick="sendWhatsAppMessage('Jeans Skinny Gris', '$44.99', '5')">📱 WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Monky Jeans</h4>
+                    <p>Moda urbana de calidad premium</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="catalog.html">Catálogo</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                        <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Monky Jeans. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CHATBOT FLOTANTE -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>🤖 Monky Bot</h3>
+            <button class="close-btn" onclick="toggleChatbot()">✕</button>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="message bot-message">
+                <p>¡Hola! ¿Te gustaría saber más sobre este producto?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Escribe tu pregunta...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <!-- BOTÓN FLOTANTE DEL CHATBOT -->
+    <button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()">
+        🤖
+    </button>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/chatbot.js"></script>
+    <script src="../assets/js/product-page.js"></script>
+</body>
+</html>

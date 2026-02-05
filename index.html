@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monky Jeans - Estilo Urbano Moderno</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">MONKY</span>
+                <span class="logo-sub">JEANS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="pages/catalog.html" class="nav-link">Catálogo</a></li>
+                <li><a href="pages/about.html" class="nav-link">Nosotros</a></li>
+                <li><a href="pages/contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER PRINCIPAL -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Monky Jeans</h1>
+            <p class="hero-subtitle">Estilo que Impone</p>
+            <p class="hero-description">Moda urbana, diseño premium y confianza en cada prenda</p>
+            <button class="btn btn-primary" onclick="window.location.href='pages/catalog.html'">Ver Colección</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- SECCIÓN DE CARACTERÍSTICAS -->
+    <section class="features">
+        <div class="container">
+            <h2>¿Por qué Monky Jeans?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👔</div>
+                    <h3>Calidad Premium</h3>
+                    <p>Telas seleccionadas y confección impecable</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Estilo Urbano</h3>
+                    <p>Diseños modernos y tendencias actuales</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Atención Personal</h3>
+                    <p>Asesoría directa por WhatsApp</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Precios Competitivos</h3>
+                    <p>Mejor relación calidad-precio del mercado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO DESTACADO -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder">👖</div>
+                        <span class="badge new">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jeans Slim Fit Negro</h3>
+                        <p class="description">Corte clásico con detalles modernos</p>
+                        <div class="price">$49.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-whatsapp" onclick="sendWhatsAppMessage('Jeans Slim Fit Negro', '$49.99', '1')">📱 WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder">👖</div>
+                        <span class="badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jeans Oversize Azul</h3>
+                        <p class="description">Tendencia actual, comodidad máxima</p>
+                        <div class="price">$54.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-whatsapp" onclick="sendWhatsAppMessage('Jeans Oversize Azul', '$54.99', '2')">📱 WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder">👔</div>
+                        <span class="badge discount">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chamarra Denim Premium</h3>
+                        <p class="description">Perfecta para cualquier ocasión</p>
+                        <div class="price"><span class="original">$79.99</span> $63.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-whatsapp" onclick="sendWhatsAppMessage('Chamarra Denim Premium', '$63.99', '3')">📱 WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder">👕</div>
+                        <span class="badge new">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Playera Monky Logo</h3>
+                        <p class="description">Diseño exclusivo y cómodo</p>
+                        <div class="price">$29.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-whatsapp" onclick="sendWhatsAppMessage('Playera Monky Logo', '$29.99', '4')">📱 WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <button class="btn btn-primary-large" onclick="window.location.href='pages/catalog.html'">Ver Todo el Catálogo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIO -->
+    <section class="testimonial">
+        <div class="container">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"La mejor calidad en jeans que he comprado. El servicio por WhatsApp es increíble, muy rápido y atento."</p>
+                <p class="testimonial-author">- Juan, Merida Yucatan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CTA FINAL -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Listo para cambiar tu estilo?</h2>
+            <p>Explora nuestra colección completa de jeans premium</p>
+            <button class="btn btn-primary" onclick="window.location.href='pages/catalog.html'">Comprar Ahora</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Monky Jeans</h4>
+                    <p>Moda urbana de calidad premium</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="pages/catalog.html">Catálogo</a></li>
+                        <li><a href="pages/about.html">Nosotros</a></li>
+                        <li><a href="pages/contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                        <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Monky Jeans. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CHATBOT FLOTANTE -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>🤖 Monky Bot</h3>
+            <button class="close-btn" onclick="toggleChatbot()">✕</button>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="message bot-message">
+                <p>¡Hola! Soy el asistente de Monky Jeans. ¿En qué puedo ayudarte hoy?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Escribe tu pregunta...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <!-- BOTÓN FLOTANTE DEL CHATBOT -->
+    <button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()">
+        🤖
+    </button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chatbot.js"></script>
+</body>
+</html>

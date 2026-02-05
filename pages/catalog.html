@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Monky Jeans</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">MONKY</span>
+                <span class="logo-sub">JEANS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="catalog.html" class="nav-link">Catálogo</a></li>
+                <li><a href="about.html" class="nav-link">Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER DEL CATÁLOGO -->
+    <section class="hero" style="height: 300px;">
+        <div class="hero-content">
+            <h1 class="hero-title">Catálogo</h1>
+            <p class="hero-subtitle">Todas nuestras colecciones</p>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- SECCIÓN DE FILTROS -->
+    <section class="catalog-filters">
+        <div class="container">
+            <div class="filter-group">
+                <h3>Filtrar por:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterProducts('all')">Todos</button>
+                    <button class="filter-btn" onclick="filterProducts('jeans')">Jeans</button>
+                    <button class="filter-btn" onclick="filterProducts('playeras')">Playeras</button>
+                    <button class="filter-btn" onclick="filterProducts('chamarras')">Chamarras</button>
+                    <button class="filter-btn" onclick="filterProducts('accesorios')">Accesorios</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO COMPLETO -->
+    <section class="catalog">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- JEANS -->
+                <div class="product-card" data-category="jeans">
+                    <div class="product-image">
+                        <div class="image-placeholder">👖</div>
+                        <span class="badge new">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jeans Slim Fit Negro</h3>
+                        <p class="description">Corte clásico con detalles modernos</p>
+                        <div class="price">$49.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=1'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jeans">
+                    <div class="product-image">
+                        <div class="image-placeholder">👖</div>
+                        <span class="badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jeans Oversize Azul</h3>
+                        <p class="description">Tendencia actual, comodidad máxima</p>
+                        <div class="price">$54.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=2'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jeans">
+                    <div class="product-image">
+                        <div class="image-placeholder">👖</div>
+                        <span class="badge discount">-15%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jeans Skinny Gris</h3>
+                        <p class="description">Ajuste perfecto y cómodo</p>
+                        <div class="price"><span class="original">$52.99</span> $44.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=5'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PLAYERAS -->
+                <div class="product-card" data-category="playeras">
+                    <div class="product-image">
+                        <div class="image-placeholder">👕</div>
+                        <span class="badge new">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Playera Monky Logo</h3>
+                        <p class="description">Diseño exclusivo y cómodo</p>
+                        <div class="price">$29.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=4'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="playeras">
+                    <div class="product-image">
+                        <div class="image-placeholder">👕</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Playera Básica Blanca</h3>
+                        <p class="description">Clásica y versátil</p>
+                        <div class="price">$19.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=6'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="playeras">
+                    <div class="product-image">
+                        <div class="image-placeholder">👕</div>
+                        <span class="badge discount">-10%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Playera Premium Negra</h3>
+                        <p class="description">Tela de calidad superior</p>
+                        <div class="price"><span class="original">$34.99</span> $31.49</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=7'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHAMARRAS -->
+                <div class="product-card" data-category="chamarras">
+                    <div class="product-image">
+                        <div class="image-placeholder">👔</div>
+                        <span class="badge discount">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chamarra Denim Premium</h3>
+                        <p class="description">Perfecta para cualquier ocasión</p>
+                        <div class="price"><span class="original">$79.99</span> $63.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=3'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="chamarras">
+                    <div class="product-image">
+                        <div class="image-placeholder">👔</div>
+                        <span class="badge new">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chamarra Trucker Azul</h3>
+                        <p class="description">Estilo icónico y moderno</p>
+                        <div class="price">$69.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=8'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="chamarras">
+                    <div class="product-image">
+                        <div class="image-placeholder">🧥</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chamarra Bomber Negro</h3>
+                        <p class="description">Tendencia urbana actual</p>
+                        <div class="price">$74.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=9'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACCESORIOS -->
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <div class="image-placeholder">👒</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gorra Monky</h3>
+                        <p class="description">Ajustable con logo bordado</p>
+                        <div class="price">$14.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=10'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <div class="image-placeholder">👜</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolsa Mochila Denim</h3>
+                        <p class="description">Resistente y espaciosa</p>
+                        <div class="price">$39.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=11'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <div class="image-placeholder">⌚</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cinturón Monky Premium</h3>
+                        <p class="description">Cuero genuino con hebilla</p>
+                        <div class="price">$24.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-secondary" onclick="window.location.href='product.html?id=12'">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Monky Jeans</h4>
+                    <p>Moda urbana de calidad premium</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="catalog.html">Catálogo</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                        <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Monky Jeans. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CHATBOT FLOTANTE -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>🤖 Monky Bot</h3>
+            <button class="close-btn" onclick="toggleChatbot()">✕</button>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="message bot-message">
+                <p>¡Hola! Soy el asistente de Monky Jeans. ¿En qué puedo ayudarte?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Escribe tu pregunta...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <!-- BOTÓN FLOTANTE DEL CHATBOT -->
+    <button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()">
+        🤖
+    </button>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/chatbot.js"></script>
+    <script src="../assets/js/catalog-filter.js"></script>
+</body>
+</html>

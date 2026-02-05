@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Monky Jeans</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/page-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">MONKY</span>
+                <span class="logo-sub">JEANS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="catalog.html" class="nav-link">Catálogo</a></li>
+                <li><a href="about.html" class="nav-link">Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="hero" style="height: 350px;">
+        <div class="hero-content">
+            <h1 class="hero-title">Contacto</h1>
+            <p class="hero-subtitle">¡Queremos escucharte!</p>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- CONTENIDO DE CONTACTO -->
+    <section class="contact-container">
+        <!-- INFORMACIÓN DE CONTACTO RÁPIDO -->
+        <div class="contact-info" style="margin-bottom: 4rem;">
+            <h3>Canales de Contacto</h3>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>📱 WhatsApp</h4>
+                    <p>
+                        <a href="https://wa.me/5521987654321" target="_blank">
+                            +52 1 987 654 321
+                        </a>
+                    </p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Atiende automático: Disponible 24/7</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>📧 Email</h4>
+                    <p>
+                        <a href="mailto:info@monkeyjeans.mx">
+                            info@monkeyjeans.mx
+                        </a>
+                    </p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Respondemos en 24 horas</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>🕒 Horario de Atención</h4>
+                    <p>
+                        Lunes a Domingo<br>
+                        <strong>9:00 AM - 9:00 PM</strong>
+                    </p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Atención personalizada</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <div style="margin-bottom: 4rem;">
+            <h2 style="font-family: var(--font-display); font-size: 2rem; text-transform: uppercase; text-align: center; margin-bottom: 2rem;">
+                Envíanos un Mensaje
+            </h2>
+            <form class="contact-form" onsubmit="sendContactForm(event)">
+                <div class="form-group">
+                    <label for="name">Nombre Completo *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Asunto *</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <div>
+            <h2 style="font-family: var(--font-display); font-size: 2rem; text-transform: uppercase; text-align: center; margin-bottom: 2rem;">
+                Preguntas Frecuentes
+            </h2>
+
+            <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item" style="margin-bottom: 1.5rem;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1rem; background-color: var(--color-light-gray); border: none; cursor: pointer; border-radius: 4px; font-weight: 700; font-size: 1rem;">
+                        ¿Cuál es el tiempo de envío? <span style="float: right;">▼</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 1rem; background-color: #f9f9f9; border-radius: 0 0 4px 4px;">
+                        <p>El tiempo de envío es de 2-5 días hábiles dentro de México. Enviamos mediante empresas de mensajería confiables con rastreo en tiempo real.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 1.5rem;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1rem; background-color: var(--color-light-gray); border: none; cursor: pointer; border-radius: 4px; font-weight: 700; font-size: 1rem;">
+                        ¿Cuál es el costo del envío? <span style="float: right;">▼</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 1rem; background-color: #f9f9f9; border-radius: 0 0 4px 4px;">
+                        <p>El costo de envío comienza desde $50. Ofrecemos envío gratis en compras mayores a $500. También contamos con opciones de envío express.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 1.5rem;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1rem; background-color: var(--color-light-gray); border: none; cursor: pointer; border-radius: 4px; font-weight: 700; font-size: 1rem;">
+                        ¿Puedo devolver mi compra? <span style="float: right;">▼</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 1rem; background-color: #f9f9f9; border-radius: 0 0 4px 4px;">
+                        <p>Claro que sí. Ofrecemos devolución sin preguntas dentro de 30 días. Solo debes contactarnos y procesaremos tu devolución.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 1.5rem;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1rem; background-color: var(--color-light-gray); border: none; cursor: pointer; border-radius: 4px; font-weight: 700; font-size: 1rem;">
+                        ¿Aceptan otros métodos de pago además de WhatsApp? <span style="float: right;">▼</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 1rem; background-color: #f9f9f9; border-radius: 0 0 4px 4px;">
+                        <p>Sí, aceptamos transferencias bancarias, tarjetas de crédito y débito. Contáctanos por WhatsApp o email para conocer todas las opciones.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 1.5rem;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1rem; background-color: var(--color-light-gray); border: none; cursor: pointer; border-radius: 4px; font-weight: 700; font-size: 1rem;">
+                        ¿Cómo sé qué talla me queda? <span style="float: right;">▼</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 1rem; background-color: #f9f9f9; border-radius: 0 0 4px 4px;">
+                        <p>Contamos con una guía de tallas en cada producto. Si tienes dudas, contacta a nuestro equipo por WhatsApp y te ayudaremos a encontrar la talla perfecta.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 1.5rem;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1rem; background-color: var(--color-light-gray); border: none; cursor: pointer; border-radius: 4px; font-weight: 700; font-size: 1rem;">
+                        ¿Tienen tienda física? <span style="float: right;">▼</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 1rem; background-color: #f9f9f9; border-radius: 0 0 4px 4px;">
+                        <p>Actualmente operamos 100% en línea. Esto nos permite ofrecer mejores precios. Pronto abriremos tiendas físicas en principales ciudades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- REDES SOCIALES -->
+        <div style="text-align: center; margin-top: 4rem; padding: 2rem; background-color: var(--color-light-gray); border-radius: 8px;">
+            <h3 style="color: var(--color-black); margin-bottom: 1.5rem;">Síguenos en Redes Sociales</h3>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
+                    <button class="btn btn-secondary" style="border-color: var(--color-gold);">📸 Instagram</button>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
+                    <button class="btn btn-secondary" style="border-color: var(--color-gold);">📘 Facebook</button>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" style="text-decoration: none;">
+                    <button class="btn btn-secondary" style="border-color: var(--color-gold);">🎵 TikTok</button>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" style="text-decoration: none;">
+                    <button class="btn btn-secondary" style="border-color: var(--color-gold);">📹 YouTube</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Monky Jeans</h4>
+                    <p>Moda urbana de calidad premium</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="catalog.html">Catálogo</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                        <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Monky Jeans. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CHATBOT FLOTANTE -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>🤖 Monky Bot</h3>
+            <button class="close-btn" onclick="toggleChatbot()">✕</button>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="message bot-message">
+                <p>¡Hola! ¿Cómo podemos ayudarte?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Escribe tu pregunta...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <!-- BOTÓN FLOTANTE DEL CHATBOT -->
+    <button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()">
+        🤖
+    </button>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/chatbot.js"></script>
+    <script src="../assets/js/contact-page.js"></script>
+</body>
+</html>

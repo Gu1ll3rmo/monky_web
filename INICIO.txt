@@ -1,0 +1,387 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║                    🤖 BIENVENIDO A MONKY JEANS 🤖                        ║
+║                                                                           ║
+║              Sitio Web Premium para Moda Urbana - 2026                   ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+👋 ¡HOLA! Gracias por usar Monky Jeans
+
+Tu sitio web está completamente funcional y listo para personalizar.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚡ INICIO RÁPIDO (2 minutos)
+
+1. Abre el archivo: index.html
+   (En tu navegador: Ctrl+O → Busca d:\monky_web\index.html)
+
+2. ¡Explora el sitio!
+   - Navega entre páginas
+   - Usa el chatbot 🤖
+   - Prueba los botones de WhatsApp
+
+3. Lee la guía:
+   - GUIA_RAPIDA.html (Interactiva)
+   - README.md (Detallada)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📁 ESTRUCTURA DEL PROYECTO
+
+✓ index.html              Página de inicio (Banner + Productos + Contacto)
+✓ pages/catalog.html      Catálogo completo (12 productos, filtros)
+✓ pages/product.html      Página de producto individual (Completa)
+✓ pages/about.html        Sobre nosotros (Historia, valores, equipo)
+✓ pages/contact.html      Contacto (Formulario + FAQ + Redes)
+
+✓ assets/css/styles.css   Estilos principales (Colores, tipografía)
+✓ assets/css/page-styles.css  Estilos adicionales (Páginas internas)
+
+✓ assets/js/main.js       Scripts principales (Navegación, eventos)
+✓ assets/js/chatbot.js    Chatbot inteligente 🤖
+✓ assets/js/catalog-filter.js  Filtrado de productos
+✓ assets/js/product-page.js    Lógica de producto
+✓ assets/js/contact-page.js    Lógica de contacto
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 LO QUE OBTIENES
+
+✅ Sitio completo de ecommerce de moda
+✅ Diseño moderno y elegante (Negro + Dorado + Rojo)
+✅ Chatbot inteligente 24/7 🤖
+✅ Integración con WhatsApp
+✅ 100% Responsivo (Móvil, Tablet, Desktop)
+✅ 12+ Productos precargados
+✅ Animaciones suaves
+✅ SEO-friendly
+✅ Código limpio y comentado
+✅ Listo para producción
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 PRIMERAS ACCIONES
+
+1️⃣ CAMBIAR NÚMERO DE WHATSAPP
+   
+   Abre: assets/js/main.js y assets/js/chatbot.js
+   Busca: const phoneNumber = '5521987654321';
+   Cambia por: const phoneNumber = 'TU_NÚMERO';
+
+2️⃣ PERSONALIZAR COLORES
+
+   Abre: assets/css/styles.css
+   Sección: :root { }
+   Modifica:
+   - --color-gold: #C9A24D (Color principal)
+   - --color-black: #000000 (Color base)
+   - --color-red: #C1121F (Acentos)
+
+3️⃣ ACTUALIZAR INFORMACIÓN
+
+   Abre: pages/about.html
+   - Actualiza historia de marca
+   - Modifica misión y visión
+   - Edita valores corporativos
+
+4️⃣ CAMBIAR CONTACTO
+
+   Abre: pages/contact.html
+   - Email: info@monkeyjeans.mx
+   - WhatsApp: +52 1 987 654 321
+   - Redes sociales
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🤖 CHATBOT INTELIGENTE
+
+Tu sitio incluye un chatbot que responde preguntas como:
+
+• "¿Cuánto cuesta el jeans?"      → Responde precio
+• "¿Tienen talla 32?"             → Informa disponibilidad
+• "¿Qué jeans tienes?"            → Lista productos
+• "¿Cuánto cuesta envío?"         → Da info de envío
+• "¿Cómo contacto?"               → Proporciona canales
+• "Quiero comprar este producto"  → Abre WhatsApp
+
+El chatbot está en TODAS las páginas (botón 🤖 abajo a la derecha)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💬 INTEGRACIÓN WHATSAPP
+
+✓ Cada producto tiene botón "📱 WhatsApp"
+✓ Al hacer clic, se abre WhatsApp con mensaje predefinido
+✓ Mensaje incluye: Nombre del producto, Precio, Talla
+✓ Contacto directo sin salir del sitio
+✓ Funciona en Desktop y Móvil
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 PRODUCTOS INCLUIDOS
+
+JEANS (3 productos):
+• Jeans Slim Fit Negro - $49.99
+• Jeans Oversize Azul - $54.99
+• Jeans Skinny Gris - $44.99
+
+PLAYERAS (3 productos):
+• Playera Monky Logo - $29.99
+• Playera Básica Blanca - $19.99
+• Playera Premium Negra - $31.49
+
+CHAMARRAS (3 productos):
+• Chamarra Denim Premium - $63.99
+• Chamarra Trucker Azul - $69.99
+• Chamarra Bomber Negro - $74.99
+
+ACCESORIOS (3 productos):
+• Gorra Monky - $14.99
+• Bolsa Mochila Denim - $39.99
+• Cinturón Monky Premium - $24.99
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎨 PALETA DE COLORES
+
+DORADO #C9A24D   - Color principal, premium, CTA
+NEGRO  #000000   - Color base, elegancia, fondos
+ROJO   #C1121F   - Énfasis, urgencia, descuentos
+AZUL   #0066FF   - Información, ofertas
+GRIS   #f5f5f5   - Fondos suaves, espacios en blanco
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📱 RESPONSIVE & MÓVIL
+
+✓ Desktop: 1200px+ (Layout completo)
+✓ Tablet: 768px-1199px (Ajustado)
+✓ Móvil: 480px-767px (Optimizado)
+✓ Extra pequeño: <480px (Minimalista)
+
+Características móvil:
+✓ Menú hamburguesa automático
+✓ Texto legible en cualquier pantalla
+✓ Botones grandes para tocar
+✓ Imágenes responsivas
+✓ Chatbot adaptado
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⭐ CARACTERÍSTICAS DESTACADAS
+
+1. NAVEGACIÓN SUAVE
+   - Menú sticky en la parte superior
+   - Links suave a secciones
+   - Breadcrumb en página de producto
+
+2. HERO SECTION IMPACTANTE
+   - Banner grande con gradiente
+   - Frase de impacto: "Monky Jeans: Estilo que impone"
+   - CTA principal destacado
+
+3. CATÁLOGO FUNCIONAL
+   - 12 productos en 4 categorías
+   - Filtros por categoría
+   - Badges para nuevos/descuentos
+   - Links directos a WhatsApp
+
+4. PÁGINA DE PRODUCTO COMPLETA
+   - Galería con thumbnails
+   - Selector de talla
+   - Control de cantidad
+   - Especificaciones técnicas
+   - 3 pestañas (Descripción, Materiales, Envío)
+   - Productos relacionados
+
+5. CHATBOT INTELIGENTE 24/7
+   - Base de conocimiento completa
+   - Reconoce intenciones
+   - Respuestas contextuales
+   - Integración WhatsApp
+
+6. INFORMACIÓN COMPLETA
+   - Página "Sobre Nosotros" detallada
+   - Historia, Misión, Visión, Valores
+   - Logros y testimonios
+   - Equipo corporativo
+
+7. SOPORTE Y CONTACTO
+   - Formulario de contacto funcional
+   - 5 Preguntas frecuentes (FAQ)
+   - Enlaces a redes sociales
+   - Múltiples canales de contacto
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎓 CÓMO AGREGAR UN NUEVO PRODUCTO
+
+1. Abre: pages/catalog.html
+
+2. Busca esta sección:
+   <div class="product-card" data-category="jeans">
+
+3. Copia y pega el bloque completo
+
+4. Modifica:
+   - data-category="jeans" → "playeras", "chamarras", "accesorios"
+   - Nombre del producto
+   - Precio
+   - ID del producto
+   - Descripción
+
+5. ¡Listo! El producto aparecerá automáticamente
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔧 CAMBIAR EL LOGOTIPO
+
+Actualmente usa emojis. Para cambiar a tu logo real:
+
+1. Abre: index.html (línea ~25)
+2. Busca:
+   <span class="logo-text">MONKY</span>
+   <span class="logo-sub">JEANS</span>
+
+3. Reemplaza con:
+   <img src="assets/images/logo.png" alt="Monky Jeans" class="logo-img">
+
+4. Agrega CSS en assets/css/styles.css:
+   .logo-img {
+       max-width: 100px;
+       height: auto;
+   }
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📚 DOCUMENTACIÓN
+
+Dentro de tu carpeta encontrarás:
+
+• README.md           - Documentación técnica detallada
+• GUIA_RAPIDA.html    - Guía interactiva (abre en navegador)
+• Este archivo        - Instrucciones de inicio
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ CHECKLIST DE PERSONALIZACIÓN
+
+Antes de lanzar, completa esto:
+
+□ Cambiar número de WhatsApp
+□ Actualizar email de contacto (info@)
+□ Personalizar colores de marca
+□ Cargar logo real (reemplazar emoji)
+□ Agregar imágenes de productos
+□ Actualizar información de empresa
+□ Modificar misión y visión
+□ Agregar equipo real
+□ Configurar redes sociales
+□ Probar en dispositivos reales
+□ Probar chatbot y WhatsApp
+□ Optimizar imágenes
+□ Configurar dominio
+□ Subir a servidor web
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 LANZAR A PRODUCCIÓN
+
+1. Asegúrate de haber personalizado todo
+2. Prueba todas las funcionalidades
+3. Optimiza imágenes (reduce tamaño)
+4. Comprime la carpeta monky_web
+5. Sube los archivos a tu hosting
+6. Mantén la estructura de carpetas intacta
+7. Configura tu dominio
+8. ¡Lanzaa 🎉
+
+Estructura importante al subir:
+- index.html (en raíz)
+- pages/ (carpeta de páginas)
+- assets/ (carpeta de CSS, JS, imágenes)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💡 CONSEJOS Y TRUCOS
+
+1. Usa F12 para abrir el inspector de navegador
+2. Prueba responsivo: F12 → Shift+M
+3. Abre DevTools: Ctrl+Shift+I
+4. Personaliza el chatbot en chatbot.js
+5. Usa Google Fonts para cambiar tipografía
+6. Crea cuenta en Google Analytics
+7. Configura Facebook Pixel
+8. Usa Cloudflare para proteger el sitio
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 PRÓXIMOS PASOS
+
+Para convertir a ecommerce completo necesitarás:
+
+BACKEND:
+- Node.js + Express, Django, o Laravel
+- Base de datos (MongoDB, PostgreSQL)
+- Sistema de autenticación
+
+FEATURES AVANZADAS:
+- Carrito de compras
+- Procesamiento de pagos (Stripe, PayPal)
+- Sistema de pedidos
+- Panel de administración
+- Gestor de inventario
+
+MARKETING:
+- Google Analytics
+- Facebook Pixel
+- Email marketing
+- CRM
+- Sistema de promociones
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📞 SOPORTE
+
+Si necesitas ayuda:
+
+📱 WhatsApp: +52 1 987 654 321
+📧 Email: info@monkeyjeans.mx
+📘 Instagram: @monkeyjeans
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🙏 AGRADECIMIENTO
+
+¡Gracias por elegir Monky Jeans!
+
+Este sitio web fue diseñado y desarrollado con atención al detalle,
+optimizado para conversiones y experiencia de usuario.
+
+Incluye:
+✓ Diseño profesional
+✓ Chatbot inteligente
+✓ Integración WhatsApp
+✓ Código limpio
+✓ Totalmente responsivo
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✨ ¡LISTO PARA COMENZAR! ✨
+
+1. Abre index.html en tu navegador
+2. Lee GUIA_RAPIDA.html para detalles
+3. Personaliza según tus necesidades
+4. ¡Lanza tu sitio de moda!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Versión: 1.0
+Fecha: 1 de Febrero de 2026
+Estado: ✅ Listo para Producción
+
+Hecho con ❤️ para marcas de moda urbana
+
+═══════════════════════════════════════════════════════════════════════════════

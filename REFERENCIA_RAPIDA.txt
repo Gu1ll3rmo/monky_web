@@ -1,0 +1,214 @@
+MONKY JEANS - REFERENCIA RÁPIDA
+===============================
+
+🚀 PARA EMPEZAR:
+1. Abre → d:\monky_web\index.html
+2. Navega por el sitio
+3. Prueba el chatbot 🤖
+4. Lee GUIA_RAPIDA.html
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📝 CAMBIOS MÁS FRECUENTES
+
+1. CAMBIAR WHATSAPP:
+   Archivo: assets/js/main.js (línea ~35)
+   Busca:   const phoneNumber = '5521987654321';
+   Cambia:  const phoneNumber = 'TU_NÚMERO';
+
+2. CAMBIAR EMAIL:
+   Archivo: pages/contact.html (línea ~79)
+   Busca:   info@monkeyjeans.mx
+   Cambia:  tu-email@tudominio.com
+
+3. CAMBIAR COLORES:
+   Archivo: assets/css/styles.css (línea ~5-13)
+   Sección: :root { ... }
+   
+4. AGREGAR PRODUCTO:
+   Archivo: pages/catalog.html
+   Copia un bloque product-card y modifica
+
+5. CAMBIAR LOGO:
+   Archivo: index.html (línea ~25)
+   Reemplaza: <span class="logo-text">MONKY</span>
+   Con:       <img src="logo.png" alt="Logo">
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎨 COLORES PRINCIPALES
+
+Dorado:  #C9A24D  (Color principal)
+Negro:   #000000  (Fondo/Base)
+Rojo:    #C1121F  (Descuentos/Énfasis)
+Azul:    #0066FF  (Información)
+Gris:    #f5f5f5  (Fondos suaves)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📱 ENLACES IMPORTANTES
+
+WhatsApp:  https://wa.me/5521987654321
+Instagram: https://www.instagram.com
+Facebook:  https://www.facebook.com
+Email:     info@monkeyjeans.mx
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✨ FUNCIONALIDADES DISPONIBLES
+
+✓ Chatbot inteligente 24/7
+✓ Integración WhatsApp directa
+✓ Filtrado de productos por categoría
+✓ Selector de talla en producto
+✓ Control de cantidad
+✓ Formulario de contacto
+✓ FAQ interactivo
+✓ Responsive 100%
+✓ Animaciones suaves
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📂 ESTRUCTURA DE ARCHIVOS
+
+index.html                 ← Página de inicio
+pages/
+├── catalog.html          ← Catálogo de productos
+├── product.html          ← Página de producto
+├── about.html            ← Sobre nosotros
+└── contact.html          ← Contacto
+
+assets/
+├── css/
+│   ├── styles.css        ← Estilos principales
+│   └── page-styles.css   ← Estilos internos
+├── js/
+│   ├── main.js           ← Scripts principales
+│   ├── chatbot.js        ← Chatbot IA
+│   ├── catalog-filter.js ← Filtrado
+│   ├── product-page.js   ← Lógica producto
+│   └── contact-page.js   ← Lógica contacto
+└── images/               ← Folder para imágenes
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💬 CHATBOT - PREGUNTAS QUE ENTIENDE
+
+Precio:        "¿Cuánto cuesta?"
+Talla:         "¿Tienen talla 32?"
+Productos:     "¿Qué jeans tienes?"
+Envío:         "¿Cuánto cuesta envío?"
+Contacto:      "¿Cómo contacto?"
+Horario:       "¿Cuál es tu horario?"
+Ayuda:         "¿Cómo funcionan?"
+Saludos:       "Hola", "Buenos días"
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ CHECKLIST RÁPIDO ANTES DE LANZAR
+
+□ Cambiar número WhatsApp
+□ Actualizar email de contacto
+□ Personalizar colores de marca
+□ Cargar imágenes reales
+□ Actualizar información de empresa
+□ Probar en móvil, tablet, desktop
+□ Probar chatbot
+□ Probar botones WhatsApp
+□ Optimizar imágenes
+□ Configurar dominio
+□ Subir a servidor
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🌐 RESPONSIVE BREAKPOINTS
+
+Desktop:  1200px+  (Pantalla completa)
+Tablet:   768px    (Ajustado)
+Móvil:    480px    (Optimizado)
+Pequeño:  320px    (Minimalista)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 PRODUCTOS PRECARGADOS
+
+JEANS:
+  • Slim Fit Negro - $49.99
+  • Oversize Azul - $54.99
+  • Skinny Gris - $44.99
+
+PLAYERAS:
+  • Monky Logo - $29.99
+  • Básica Blanca - $19.99
+  • Premium Negra - $31.49
+
+CHAMARRAS:
+  • Denim Premium - $63.99
+  • Trucker Azul - $69.99
+  • Bomber Negro - $74.99
+
+ACCESORIOS:
+  • Gorra Monky - $14.99
+  • Bolsa Mochila - $39.99
+  • Cinturón Premium - $24.99
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 ESTRATEGIA DE CONVERSIÓN
+
+1. Página de inicio con impacto
+2. Catálogo organizado y fácil
+3. Producto detallado con especificaciones
+4. Chatbot para dudas inmediatas
+5. WhatsApp para contacto directo
+6. FAQ para preguntas comunes
+7. Testimonial para confianza
+8. Múltiples CTA (llamadas a acción)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔍 CÓMO ENCONTRAR COSAS EN EL CÓDIGO
+
+Cambiar número WhatsApp:
+  Busca: "5521987654321" (en main.js y chatbot.js)
+
+Cambiar colores:
+  Busca: "--color-" (en styles.css línea 5+)
+
+Cambiar productos:
+  Busca: "product-card" (en catalog.html)
+
+Cambiar chatbot:
+  Edita: assets/js/chatbot.js (clase MonkyChatbot)
+
+Cambiar FAQ:
+  Edita: pages/contact.html (sección faq-container)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💡 TIPS ÚTILES
+
+• Usa Chrome DevTools (F12) para editar en tiempo real
+• Prueba responsivo: F12 → Shift+M
+• Copia y pega bloques de producto para agregar más
+• Usa Google Fonts para cambiar tipografía
+• Reemplaza emojis con imágenes reales
+• Agrega Google Analytics para ver estadísticas
+• Configura Facebook Pixel para publicidad
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎓 PARA APRENDER MÁS
+
+HTML:     index.html y pages/*.html
+CSS:      assets/css/styles.css
+JS:       assets/js/main.js y chatbot.js
+Docs:     README.md y GUIA_RAPIDA.html
+
+═══════════════════════════════════════════════════════════════════════════════
+
+VERSIÓN: 1.0
+FECHA: 1 de Febrero de 2026
+ESTADO: ✅ Listo para Producción
+
+═══════════════════════════════════════════════════════════════════════════════
